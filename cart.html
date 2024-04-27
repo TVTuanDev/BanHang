@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Giỏ hàng</title>
+    <link rel="icon" href="/img/favicon.png" />
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/custom.css" />
+    <link rel="stylesheet" href="/css/base.css" />
+    <link rel="stylesheet" href="/owlcarousel/assets/owl.carousel.min.css" />
+    <link
+      rel="stylesheet"
+      href="/owlcarousel/assets/owl.theme.default.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.1.4/toastr.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/themes/base/jquery-ui.min.css"
+    />
+  </head>
+  <body>
+    <main id="main" class="site-main">
+      <div class="container">
+        <div class="cart pt-5 row cart-page">
+          <div class="col-lg-8">
+            <div class="checkout-process-bar block-border">
+              <ul>
+                <li class="active">
+                  <span>Giỏ hàng</span>
+                </li>
+                <li>
+                  <span>Đặt hàng</span>
+                </li>
+                <li>
+                  <span>Thanh toán</span>
+                </li>
+                <li>
+                  <span>Hoàn thành hóa đơn</span>
+                </li>
+              </ul>
+              <p class="checkout-process-bar__title">Giỏ hàng</p>
+            </div>
+            <div class="box-product-cart">
+              <div class="cart-list">
+                <h2 class="cart-title">
+                  Giỏ hàng của bạn
+                  <b><span class="cart-total">4</span> Sản Phẩm</b>
+                </h2>
+                <table class="cart-table">
+                  <thead>
+                    <tr>
+                      <th>Tên Sản phẩm</th>
+                      <th>Chiết khấu</th>
+                      <th>Số lượng</th>
+                      <th>Tổng tiền</th>
+                      <th></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <div class="cart-product-item d-flex">
+                          <div class="cart-product-item_img">
+                            <a href="#"
+                              ><img src="./img/Quần tây nam kẻ.jpg" alt=""
+                            /></a>
+                          </div>
+                          <div class="cart-product-item_content">
+                            <a href="#"><h3>Quần ivy men</h3></a>
+                            <div class="cart-product-item_properties">
+                              <p>Màu sắc: <span>Tím cà</span></p>
+                              <p>Size: <span>XL</span></p>
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="cart-sale-price">
+                        <p>-763.000đ</p>
+                        <p class="cart-sale_item">( -70% )</p>
+                      </td>
+                      <td class="product-info-quantity">
+                        <div class="product-info-quantity-input">
+                          <input
+                            type="number"
+                            value="1"
+                            name="quantity"
+                            max="5"
+                          />
+                          <div
+                            class="product-quantity product-detail__quantity--increase"
+                          >
+                            +
+                          </div>
+                          <div
+                            class="product-quantity product-detail__quantity--decrease"
+                          >
+                            -
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="cart-product-item_price">498.000đ</div>
+                      </td>
+                      <td>
+                        <a href="javascript:void(0)">
+                          <i class="fa-solid fa-trash-can"></i>
+                        </a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="cart-product-item d-flex">
+                          <div class="cart-product-item_img">
+                            <a href="#"
+                              ><img src="./img/Quần tây nam kẻ.jpg" alt=""
+                            /></a>
+                          </div>
+                          <div class="cart-product-item_content">
+                            <a href="#"><h3>Quần ivy men</h3></a>
+                            <div class="cart-product-item_properties">
+                              <p>Màu sắc: <span>Tím cà</span></p>
+                              <p>Size: <span>XL</span></p>
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="cart-sale-price">
+                        <p>-763.000đ</p>
+                        <p class="cart-sale_item">( -70% )</p>
+                      </td>
+                      <td class="product-info-quantity">
+                        <div class="product-info-quantity-input">
+                          <input
+                            type="number"
+                            value="1"
+                            name="quantity"
+                            max="5"
+                          />
+                          <div
+                            class="product-quantity product-detail__quantity--increase"
+                          >
+                            +
+                          </div>
+                          <div
+                            class="product-quantity product-detail__quantity--decrease"
+                          >
+                            -
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="cart-product-item_price">498.000đ</div>
+                      </td>
+                      <td>
+                        <a href="javascript:void(0)">
+                          <i class="fa-solid fa-trash-can"></i>
+                        </a>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <a
+                  href="javascript: window.history.back();"
+                  class="btn btn--large btn--outline btn-cart-continue mb-3"
+                >
+                  <i class="fa-solid fa-arrow-left-long"></i>
+                  Tiếp tục mua hàng
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="cart-summary">
+              <div class="cart-summary_overview">
+                <h3>Tổng tiền giỏ hàng</h3>
+                <div class="cart-summary_overview-item">
+                  <p>Tổng sản phẩm</p>
+                  <p class="total-product">1</p>
+                </div>
+                <div class="cart-summary_overview-item">
+                  <p>Tổng tiền hàng</p>
+                  <p class="total-not-discount">1.390.000đ</p>
+                </div>
+                <div class="cart-summary_overview-item">
+                  <p>Thành tiền</p>
+                  <p>
+                    <b class="order-price-total"> 556.000đ </b>
+                  </p>
+                </div>
+                <div class="cart-summary_overview-item">
+                  <p>Tạm tính</p>
+                  <p>
+                    <b class="order-price-total"> 556.000đ </b>
+                  </p>
+                </div>
+              </div>
+              <div class="cart-summary_note">
+                <div class="cart-sumary_note-item d-flex">
+                  <div class="left-inner-note">
+                    <i class="fa-solid fa-exclamation"></i>
+                  </div>
+                  <div class="content-inner-note">
+                    <p>
+                      Miễn <b>đổi trả</b> đối với sản phẩm đồng giá / sale trên
+                      50%
+                    </p>
+                  </div>
+                </div>
+                <div class="cart-sumary_note-item d-flex">
+                  <div class="left-inner-note">
+                    <i class="fa-solid fa-exclamation"></i>
+                  </div>
+                  <div class="content-inner-note">
+                    <p>
+                      Quà tặng sẽ tự động thêm vào đơn hàng có SP nguyên giá từ
+                      1.5tr
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="cart-summary_button pt-3 text-uppercase">
+                <a href="#" class="btn btn--large fw-bold" id="purchase-step-1"
+                  >Đặt hàng</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/jquery-3.7.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+    <script src="/owlcarousel/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.1.4/toastr.min.js"></script>
+    <script src="/js/app.js"></script>
+  </body>
+</html>

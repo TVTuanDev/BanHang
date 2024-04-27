@@ -1,0 +1,375 @@
+.auth {
+  padding: 20px 0 20px 0;
+}
+
+.auth-container {
+  max-width: 1170px;
+  width: 100%;
+  padding: 0 16px;
+  -webkit-margin-start: auto;
+  margin-inline-start: auto;
+  -webkit-margin-end: auto;
+  margin-inline-end: auto;
+}
+
+.auth-row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0 -16px;
+  position: relative;
+}
+
+.auth-row::before {
+  position: absolute;
+  content: "";
+  height: 300px;
+  width: 1px;
+  left: 50%;
+  top: 0;
+  background-color: #e7e8e9;
+}
+
+.auth__login,
+.auth__register {
+  flex: 0 0 480px;
+  max-width: 100%;
+  padding: 0 15px;
+}
+
+.auth__login .auth__title,
+.auth__login .auth__description,
+.auth__register .auth__title,
+.auth__register .auth__description {
+  text-align: center;
+}
+
+.auth__title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  margin-bottom: 0;
+  color: #221f20;
+}
+
+.auth__title,
+.mobile-menu,
+.close-menu,
+.icon-ic_next-1 {
+  cursor: pointer;
+}
+
+.auth__title + .auth__login__content {
+  margin-top: 10px;
+}
+
+.auth__description {
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 0;
+  color: #6c6d70;
+}
+
+.auth__form {
+  margin-top: 24px;
+  width: 390px;
+  max-width: 100%;
+  -webkit-margin-start: auto;
+  margin-inline-start: auto;
+  -webkit-margin-end: auto;
+  margin-inline-end: auto;
+}
+
+.auth__form .form-control {
+  width: 100%;
+}
+
+.form-control:not(.rounded) {
+  border-radius: 4px;
+}
+
+.auth__form .form-group + .form-group {
+  margin-top: 24px;
+}
+
+.auth__login .auth__form__options {
+  margin-top: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form-checkbox {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.auth__login__content .form-checkbox label {
+  display: flex;
+  min-height: 20px;
+}
+
+.checkboxs {
+  border: 1px solid #faf9f9;
+  display: block;
+  width: 18px;
+  height: 18px;
+  appearance: auto;
+  -moz-appearance: button;
+  -ms-appearance: button;
+  -webkit-appearance: button;
+}
+
+.auth__login__content .form-checkbox label span {
+  display: flex;
+  align-items: center;
+  min-height: 20px;
+  margin-left: 5px;
+}
+
+.auth__form__link {
+  color: #221f20;
+  font-size: 14px;
+  line-height: 16px;
+  text-decoration: underline;
+}
+
+.auth__form__buttons {
+  margin-top: 29px;
+}
+
+.auth__form__buttons .btn {
+  width: 100%;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.btn {
+  border: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.btn--large {
+  padding: 12px 24px;
+  border-radius: 16px 0px;
+  font-size: 16px;
+  line-height: 24px;
+  background-color: #221f20;
+  color: #f7f8f9;
+  border: 1px solid transparent;
+}
+
+.btn:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.btn--large:hover,
+.my-account-wrapper .col-input .input-append:hover,
+.cart__product-item__btn--save .btn:hover,
+.cart__product-item__btn--out-of-stock .btn:hover {
+  background-color: #f7f8f9;
+  color: #221f20;
+  border-color: #221f20;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"],
+input[type="number"],
+input[type="search"],
+textarea {
+  border: 1px solid #e7e8e9;
+  border-radius: 4px;
+  padding: 15px;
+  font-size: 14px;
+  color: #57585a;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.order-block__title {
+  display: flex;
+  align-items: center;
+}
+
+.order-block_title h2 {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  color: #221f20;
+  text-transform: uppercase;
+  max-width: max-content;
+}
+
+.order-block__title h3 {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  color: #221f20;
+}
+
+.register-summary__overview h4 {
+  margin-bottom: 10px;
+  color: #221f20;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-group label span,
+.form-check label span a {
+  color: red;
+}
+
+.form-control {
+  height: 48px;
+}
+
+select.form-control {
+  border: 1px solid #e7e8e9;
+  appearance: none;
+  background-image: url(../img/arrow_down.png);
+  background-size: 16px;
+  background-position-x: calc(100% - 20px);
+  background-position-y: center;
+  background-repeat: no-repeat;
+  padding: 0px 16px;
+}
+
+.form-check {
+  display: block;
+  min-height: 1.5rem;
+  padding-left: 1.5em;
+  margin-bottom: 0.125rem;
+}
+
+.block-border {
+  border: 1px solid #e7e8e9;
+  border-radius: 32px 0px;
+}
+
+.form-checkbox__input {
+  display: none;
+}
+
+.form-checkbox__label {
+  font-size: 14px;
+  line-height: 16px;
+  color: #221f20;
+  cursor: pointer;
+  position: relative;
+  padding-left: 28px;
+}
+
+.form-checkbox__label::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background: #ffffff;
+  border: 1px solid #e7e8e9;
+  display: inline-block;
+  margin-right: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.form-checkbox__input:checked ~ .form-checkbox__label::before {
+  content: "\f00c";
+  font-family: "Font Awesome 6 Free";
+  font-style: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 1200px) {
+  .header-menu .menu-main > li > span {
+    font-size: 10px;
+  }
+
+  #header .search-form input {
+    width: 170px;
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 992px) {
+  #header .container {
+    max-width: 100%;
+    padding: 0 20px;
+  }
+
+  #header .search-form input {
+    width: 150px;
+    font-size: 9px;
+  }
+
+  #header .header-menu ul li {
+    margin-right: 5px;
+  }
+
+  #header .search-form input,
+  .header-actions .item .icon {
+    margin-right: 5px;
+  }
+
+  .header-actions .item .number-cart {
+    right: -7px;
+  }
+
+  .header-logo img {
+    width: 100px;
+  }
+}
+
+@media (max-width: 768px) {
+  .menu-main,
+  .header-right .search-form,
+  #main .home-banner,
+  .header-actions .item:nth-child(1),
+  .header-actions .item:nth-child(2) {
+    display: none;
+  }
+
+  body .container {
+    max-width: 100%;
+  }
+
+  .header-logo img {
+    width: 120px;
+  }
+}
+
+@media (max-width: 576px) {
+  body .container {
+    max-width: 100%;
+    width: 100%;
+  }
+}
+
+.dat {
+  width: 100%;
+  height: 100px;
+  background-color: red;
+  margin-top: 200px;
+  z-index: 9999;
+}

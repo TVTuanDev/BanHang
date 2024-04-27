@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sản phẩm yêu thích</title>
+    <link rel="icon" href="/img/favicon.png" />
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/custom.css" />
+    <link rel="stylesheet" href="/css/base.css" />
+    <link rel="stylesheet" href="/owlcarousel/assets/owl.carousel.min.css" />
+    <link
+      rel="stylesheet"
+      href="/owlcarousel/assets/owl.theme.default.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.1.4/toastr.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/themes/base/jquery-ui.min.css"
+    />
+  </head>
+  <body>
+    <main id="main" class="site-main">
+      <div class="container">
+        <div class="breadcrumb" style="--bs-breadcrumb-divider: '-'">
+          <ul class="breadcrumb-list">
+            <li class="breadcrumb-item">
+              <a class="breadcrumb-link" href="/index.html">Trang chủ</a>
+            </li>
+            <li class="breadcrumb-item">
+              <a class="breadcrumb-link" href="#">Áo</a>
+            </li>
+            <li class="breadcrumb-item">
+              <a class="breadcrumb-link" href="#">Áo khoác/vest</a>
+            </li>
+          </ul>
+        </div>
+        <div class="my-account row">
+          <div class="col-lg-4 col-xl-3">
+            <div class="order-sitemenu block-border">
+              <div class="order-sitemenu__user">
+                <div class="sitemenu__user-avatar">
+                  <img src="./img/avatar-default.png" alt="" />
+                </div>
+                <div class="sitemenu__user-username">
+                  <p>Trần Tuấn</p>
+                </div>
+              </div>
+              <div class="order-sitemenu__menu">
+                <ul>
+                  <li class="active">
+                    <a href="#">
+                      <i class="fa-regular fa-user"></i>
+                      Thông tin tài khoản
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fa-solid fa-user-lock"></i>
+                      Lịch sử đăng nhập
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fa-solid fa-wallet"></i>
+                      Quản lý đơn hàng
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fa-solid fa-location-dot"></i>
+                      Sổ địa chỉ
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fa-regular fa-eye"></i>phẩm yêu thích
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fa-regular fa-heart"></i>
+                      Sản phẩm yêu thích
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fa-solid fa-headphones"></i>
+                      Hỏi đáp sản phẩm
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fa-regular fa-hand-point-right"></i>
+                      Hỗ trợ -IVY
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-8 col-xl-9">
+            <div class="product-like">
+              <div class="order-block_title">
+                <h2>Sản phẩm yêu thích</h2>
+              </div>
+              <div class="order-block">
+                <div class="main-prod w-100 ps-0">
+                  <div class="top-main-prod">
+                    <h1 class="sub-title-main"></h1>
+                    <div class="filter-prod">
+                      <div class="item-filter"></div>
+                    </div>
+                  </div>
+                  <div class="sub-main-prod">
+                    <div
+                      class="list-products list-products-cat d-flex flex-wrap"
+                    >
+                      <div class="item-cat-product">
+                        <div class="product">
+                          <!-- <div class="info-ticket seller">Best Seller</div> -->
+                          <span class="badget badget_02"
+                            >-50<span>%</span></span
+                          >
+                          <div class="thumb-product">
+                            <a href="#">
+                              <img
+                                src="/img/Zuýp 2 Lớp Phối Đai.jpg"
+                                alt=""
+                                class="lazy"
+                              />
+                              <img
+                                src="/img/Zuýp 2 Lớp Phối Đai_bak.jpg"
+                                alt=""
+                                class="hover-img lazy"
+                              />
+                            </a>
+                          </div>
+                          <div class="info-product">
+                            <div class="list-color">
+                              <ul>
+                                <li class="checked">
+                                  <span class="color-picker">
+                                    <img src="/img/049.png" alt="" />
+                                  </span>
+                                </li>
+                                <li class="">
+                                  <span class="color-picker">
+                                    <img src="/img/051.png" alt="" />
+                                  </span>
+                                </li>
+                              </ul>
+                              <div class="favourite">
+                                <i class="fa-regular fa-heart"></i>
+                              </div>
+                            </div>
+                            <h3 class="title-product">
+                              <a href="#">Zuýp 2 Lớp Phối Đai</a>
+                            </h3>
+                            <div class="price-product">
+                              <ins>
+                                <span>970.000đ</span>
+                              </ins>
+                              <del>
+                                <span>1.940.000đ</span>
+                              </del>
+                            </div>
+                          </div>
+                          <div class="add-to-cart">
+                            <span>
+                              <i class="bx bx-shopping-bag"></i>
+                            </span>
+                          </div>
+                          <div class="list-size">
+                            <ul>
+                              <li>
+                                <button class="btn bt-large">s</button>
+                              </li>
+                              <li>
+                                <button class="btn bt-large">m</button>
+                              </li>
+                              <li>
+                                <button class="btn bt-large">l</button>
+                              </li>
+                              <li>
+                                <button class="btn bt-large">xl</button>
+                              </li>
+                              <li class="unactive">
+                                <button class="btn bt-large">xxl</button>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="item-cat-product">
+                        <div class="product">
+                          <!-- <div class="info-ticket seller">Best Seller</div> -->
+                          <span class="badget badget_02"
+                            >-50<span>%</span></span
+                          >
+                          <div class="thumb-product">
+                            <a href="#">
+                              <img
+                                src="/img/Zuýp 2 Lớp Phối Đai.jpg"
+                                alt=""
+                                class="lazy"
+                              />
+                              <img
+                                src="/img/Zuýp 2 Lớp Phối Đai_bak.jpg"
+                                alt=""
+                                class="hover-img lazy"
+                              />
+                            </a>
+                          </div>
+                          <div class="info-product">
+                            <div class="list-color">
+                              <ul>
+                                <li class="checked">
+                                  <span class="color-picker">
+                                    <img src="/img/049.png" alt="" />
+                                  </span>
+                                </li>
+                                <li class="">
+                                  <span class="color-picker">
+                                    <img src="/img/051.png" alt="" />
+                                  </span>
+                                </li>
+                              </ul>
+                              <div class="favourite">
+                                <i class="fa-regular fa-heart"></i>
+                              </div>
+                            </div>
+                            <h3 class="title-product">
+                              <a href="#">Zuýp 2 Lớp Phối Đai</a>
+                            </h3>
+                            <div class="price-product">
+                              <ins>
+                                <span>970.000đ</span>
+                              </ins>
+                              <del>
+                                <span>1.940.000đ</span>
+                              </del>
+                            </div>
+                          </div>
+                          <div class="add-to-cart">
+                            <span>
+                              <i class="bx bx-shopping-bag"></i>
+                            </span>
+                          </div>
+                          <div class="list-size">
+                            <ul>
+                              <li>
+                                <button class="btn bt-large">s</button>
+                              </li>
+                              <li>
+                                <button class="btn bt-large">m</button>
+                              </li>
+                              <li>
+                                <button class="btn bt-large">l</button>
+                              </li>
+                              <li>
+                                <button class="btn bt-large">xl</button>
+                              </li>
+                              <li class="unactive">
+                                <button class="btn bt-large">xxl</button>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="item-cat-product">
+                        <div class="product">
+                          <!-- <div class="info-ticket seller">Best Seller</div> -->
+                          <span class="badget badget_02"
+                            >-50<span>%</span></span
+                          >
+                          <div class="thumb-product">
+                            <a href="#">
+                              <img
+                                src="/img/Zuýp 2 Lớp Phối Đai.jpg"
+                                alt=""
+                                class="lazy"
+                              />
+                              <img
+                                src="/img/Zuýp 2 Lớp Phối Đai_bak.jpg"
+                                alt=""
+                                class="hover-img lazy"
+                              />
+                            </a>
+                          </div>
+                          <div class="info-product">
+                            <div class="list-color">
+                              <ul>
+                                <li class="checked">
+                                  <span class="color-picker">
+                                    <img src="/img/049.png" alt="" />
+                                  </span>
+                                </li>
+                                <li class="">
+                                  <span class="color-picker">
+                                    <img src="/img/051.png" alt="" />
+                                  </span>
+                                </li>
+                              </ul>
+                              <div class="favourite">
+                                <i class="fa-regular fa-heart"></i>
+                              </div>
+                            </div>
+                            <h3 class="title-product">
+                              <a href="#">Zuýp 2 Lớp Phối Đai</a>
+                            </h3>
+                            <div class="price-product">
+                              <ins>
+                                <span>970.000đ</span>
+                              </ins>
+                              <del>
+                                <span>1.940.000đ</span>
+                              </del>
+                            </div>
+                          </div>
+                          <div class="add-to-cart">
+                            <span>
+                              <i class="bx bx-shopping-bag"></i>
+                            </span>
+                          </div>
+                          <div class="list-size">
+                            <ul>
+                              <li>
+                                <button class="btn bt-large">s</button>
+                              </li>
+                              <li>
+                                <button class="btn bt-large">m</button>
+                              </li>
+                              <li>
+                                <button class="btn bt-large">l</button>
+                              </li>
+                              <li>
+                                <button class="btn bt-large">xl</button>
+                              </li>
+                              <li class="unactive">
+                                <button class="btn bt-large">xxl</button>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="item-cat-product">
+                        <div class="product">
+                          <!-- <div class="info-ticket seller">Best Seller</div> -->
+                          <span class="badget badget_02"
+                            >-50<span>%</span></span
+                          >
+                          <div class="thumb-product">
+                            <a href="#">
+                              <img
+                                src="/img/Zuýp 2 Lớp Phối Đai.jpg"
+                                alt=""
+                                class="lazy"
+                              />
+                              <img
+                                src="/img/Zuýp 2 Lớp Phối Đai_bak.jpg"
+                                alt=""
+                                class="hover-img lazy"
+                              />
+                            </a>
+                          </div>
+                          <div class="info-product">
+                            <div class="list-color">
+                              <ul>
+                                <li class="checked">
+                                  <span class="color-picker">
+                                    <img src="/img/049.png" alt="" />
+                                  </span>
+                                </li>
+                                <li class="">
+                                  <span class="color-picker">
+                                    <img src="/img/051.png" alt="" />
+                                  </span>
+                                </li>
+                              </ul>
+                              <div class="favourite">
+                                <i class="fa-regular fa-heart"></i>
+                              </div>
+                            </div>
+                            <h3 class="title-product">
+                              <a href="#">Zuýp 2 Lớp Phối Đai</a>
+                            </h3>
+                            <div class="price-product">
+                              <ins>
+                                <span>970.000đ</span>
+                              </ins>
+                              <del>
+                                <span>1.940.000đ</span>
+                              </del>
+                            </div>
+                          </div>
+                          <div class="add-to-cart">
+                            <span>
+                              <i class="bx bx-shopping-bag"></i>
+                            </span>
+                          </div>
+                          <div class="list-size">
+                            <ul>
+                              <li>
+                                <button class="btn bt-large">s</button>
+                              </li>
+                              <li>
+                                <button class="btn bt-large">m</button>
+                              </li>
+                              <li>
+                                <button class="btn bt-large">l</button>
+                              </li>
+                              <li>
+                                <button class="btn bt-large">xl</button>
+                              </li>
+                              <li class="unactive">
+                                <button class="btn bt-large">xxl</button>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="item-cat-product">
+                        <div class="product">
+                          <div class="info-ticket seller">Best Seller</div>
+                          <span class="badget badget_02"
+                            >-50<span>%</span></span
+                          >
+                          <div class="thumb-product">
+                            <a href="#">
+                              <img
+                                src="/img/Zuýp 2 Lớp Phối Đai.jpg"
+                                alt=""
+                                class="lazy"
+                              />
+                              <img
+                                src="/img/Zuýp 2 Lớp Phối Đai_bak.jpg"
+                                alt=""
+                                class="hover-img lazy"
+                              />
+                            </a>
+                          </div>
+                          <div class="info-product">
+                            <div class="list-color">
+                              <ul>
+                                <li class="checked">
+                                  <span class="color-picker">
+                                    <img src="/img/049.png" alt="" />
+                                  </span>
+                                </li>
+                                <li class="">
+                                  <span class="color-picker">
+                                    <img src="/img/051.png" alt="" />
+                                  </span>
+                                </li>
+                              </ul>
+                              <div class="favourite">
+                                <i class="fa-regular fa-heart"></i>
+                              </div>
+                            </div>
+                            <h3 class="title-product">
+                              <a href="#">Zuýp 2 Lớp Phối Đai</a>
+                            </h3>
+                            <div class="price-product">
+                              <ins>
+                                <span>970.000đ</span>
+                              </ins>
+                              <del>
+                                <span>1.940.000đ</span>
+                              </del>
+                            </div>
+                          </div>
+                          <div class="add-to-cart">
+                            <span>
+                              <i class="bx bx-shopping-bag"></i>
+                            </span>
+                          </div>
+                          <div class="list-size">
+                            <ul>
+                              <li>
+                                <button class="btn bt-large">s</button>
+                              </li>
+                              <li>
+                                <button class="btn bt-large">m</button>
+                              </li>
+                              <li>
+                                <button class="btn bt-large">l</button>
+                              </li>
+                              <li>
+                                <button class="btn bt-large">xl</button>
+                              </li>
+                              <li class="unactive">
+                                <button class="btn bt-large">xxl</button>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="item-cat-product">
+                        <div class="product">
+                          <!-- <div class="info-ticket seller">Best Seller</div> -->
+                          <span class="badget badget_02"
+                            >-50<span>%</span></span
+                          >
+                          <div class="thumb-product">
+                            <a href="#">
+                              <img
+                                src="/img/Zuýp 2 Lớp Phối Đai.jpg"
+                                alt=""
+                                class="lazy"
+                              />
+                              <img
+                                src="/img/Zuýp 2 Lớp Phối Đai_bak.jpg"
+                                alt=""
+                                class="hover-img lazy"
+                              />
+                            </a>
+                          </div>
+                          <div class="info-product">
+                            <div class="list-color">
+                              <ul>
+                                <li class="checked">
+                                  <span class="color-picker">
+                                    <img src="/img/049.png" alt="" />
+                                  </span>
+                                </li>
+                                <li class="">
+                                  <span class="color-picker">
+                                    <img src="/img/051.png" alt="" />
+                                  </span>
+                                </li>
+                              </ul>
+                              <div class="favourite">
+                                <i class="fa-regular fa-heart"></i>
+                              </div>
+                            </div>
+                            <h3 class="title-product">
+                              <a href="#">Zuýp 2 Lớp Phối Đai</a>
+                            </h3>
+                            <div class="price-product">
+                              <ins>
+                                <span>970.000đ</span>
+                              </ins>
+                              <del>
+                                <span>1.940.000đ</span>
+                              </del>
+                            </div>
+                          </div>
+                          <div class="add-to-cart">
+                            <span>
+                              <i class="bx bx-shopping-bag"></i>
+                            </span>
+                          </div>
+                          <div class="list-size">
+                            <ul>
+                              <li>
+                                <button class="btn bt-large">s</button>
+                              </li>
+                              <li>
+                                <button class="btn bt-large">m</button>
+                              </li>
+                              <li>
+                                <button class="btn bt-large">l</button>
+                              </li>
+                              <li>
+                                <button class="btn bt-large">xl</button>
+                              </li>
+                              <li class="unactive">
+                                <button class="btn bt-large">xxl</button>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="item-cat-product">
+                        <div class="product">
+                          <!-- <div class="info-ticket seller">Best Seller</div> -->
+                          <span class="badget badget_02"
+                            >-50<span>%</span></span
+                          >
+                          <div class="thumb-product">
+                            <a href="#">
+                              <img
+                                src="/img/Zuýp 2 Lớp Phối Đai.jpg"
+                                alt=""
+                                class="lazy"
+                              />
+                              <img
+                                src="/img/Zuýp 2 Lớp Phối Đai_bak.jpg"
+                                alt=""
+                                class="hover-img lazy"
+                              />
+                            </a>
+                          </div>
+                          <div class="info-product">
+                            <div class="list-color">
+                              <ul>
+                                <li class="checked">
+                                  <span class="color-picker">
+                                    <img src="/img/049.png" alt="" />
+                                  </span>
+                                </li>
+                                <li class="">
+                                  <span class="color-picker">
+                                    <img src="/img/051.png" alt="" />
+                                  </span>
+                                </li>
+                              </ul>
+                              <div class="favourite">
+                                <i class="fa-regular fa-heart"></i>
+                              </div>
+                            </div>
+                            <h3 class="title-product">
+                              <a href="#">Zuýp 2 Lớp Phối Đai</a>
+                            </h3>
+                            <div class="price-product">
+                              <ins>
+                                <span>970.000đ</span>
+                              </ins>
+                              <del>
+                                <span>1.940.000đ</span>
+                              </del>
+                            </div>
+                          </div>
+                          <div class="add-to-cart">
+                            <span>
+                              <i class="bx bx-shopping-bag"></i>
+                            </span>
+                          </div>
+                          <div class="list-size">
+                            <ul>
+                              <li>
+                                <button class="btn bt-large">s</button>
+                              </li>
+                              <li>
+                                <button class="btn bt-large">m</button>
+                              </li>
+                              <li>
+                                <button class="btn bt-large">l</button>
+                              </li>
+                              <li>
+                                <button class="btn bt-large">xl</button>
+                              </li>
+                              <li class="unactive">
+                                <button class="btn bt-large">xxl</button>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/jquery-3.7.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+    <script src="/owlcarousel/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.1.4/toastr.min.js"></script>
+    <script src="/js/app.js"></script>
+  </body>
+</html>

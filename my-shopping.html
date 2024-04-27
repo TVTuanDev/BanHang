@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quản lý đơn hàng</title>
+    <link rel="icon" href="/img/favicon.png" />
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/base.css" />
+    <link rel="stylesheet" href="/css/custom.css" />
+    <link rel="stylesheet" href="/owlcarousel/assets/owl.carousel.min.css" />
+    <link
+      rel="stylesheet"
+      href="/owlcarousel/assets/owl.theme.default.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.1.4/toastr.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/themes/base/jquery-ui.min.css"
+    />
+  </head>
+  <body>
+    <main id="main" class="site-main">
+      <div class="container">
+        <div class="breadcrumb" style="--bs-breadcrumb-divider: '-'">
+          <ul class="breadcrumb-list">
+            <li class="breadcrumb-item">
+              <a class="breadcrumb-link" href="/index.html">Trang chủ</a>
+            </li>
+            <li class="breadcrumb-item">
+              <a class="breadcrumb-link" href="#">Áo</a>
+            </li>
+            <li class="breadcrumb-item">
+              <a class="breadcrumb-link" href="#">Áo khoác/vest</a>
+            </li>
+          </ul>
+        </div>
+        <div class="my-account row">
+          <div class="col-lg-4 col-xl-3">
+            <div class="order-sitemenu block-border">
+              <div class="order-sitemenu__user">
+                <div class="sitemenu__user-avatar">
+                  <img src="./img/avatar-default.png" alt="" />
+                </div>
+                <div class="sitemenu__user-username">
+                  <p>Trần Tuấn</p>
+                </div>
+              </div>
+              <div class="order-sitemenu__menu">
+                <ul>
+                  <li class="active">
+                    <a href="#">
+                      <i class="fa-regular fa-user"></i>
+                      Thông tin tài khoản
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fa-solid fa-user-lock"></i>
+                      Lịch sử đăng nhập
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fa-solid fa-wallet"></i>
+                      Quản lý đơn hàng
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fa-solid fa-location-dot"></i>
+                      Sổ địa chỉ
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fa-regular fa-eye"></i>
+                      Sản phẩm đã xem
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fa-regular fa-heart"></i>
+                      Sản phẩm yêu thích
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fa-solid fa-headphones"></i>
+                      Hỏi đáp sản phẩm
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fa-regular fa-hand-point-right"></i>
+                      Hỗ trợ -IVY
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-8 col-xl-9">
+            <div
+              class="order-block_title d-flex align-items-center justify-content-between"
+            >
+              <h2>Quản lý đơn hàng</h2>
+              <div class="form-group">
+                <label>Trạng thái đơn hàng:</label>
+                <select class="form-control rounded w">
+                  <option value="" selected="selected">Tất cả</option>
+                  <option value="tao_don_hang">Đặt hàng thành công</option>
+                  <option value="dang_xu_ly">Đang xử lý</option>
+                  <option value="cho_giao_van">Chờ giao vận</option>
+                  <option value="dang_van_chuyen">Đã gửi</option>
+                  <option value="da_nhan_hang">Đã nhận hàng</option>
+                  <option value="da_huy">Đã hủy</option>
+                  <option value="da_tra_hang">Trả hàng</option>
+                </select>
+              </div>
+            </div>
+            <div class="wrap-space"></div>
+            <div class="order-block">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th class="text-center">Mã đơn hàng</th>
+                    <th class="text-center">Ngày</th>
+                    <th class="text-center">Trạng thái</th>
+                    <th class="text-center">Sản phẩm</th>
+                    <th class="text-center">Tổng tiền</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="text-center text-decoration-underline">
+                      IVM7627005
+                    </td>
+                    <td class="text-center">31/03/2024 21:39:46</td>
+                    <td class="text-center">Đã hủy đơn hàng</td>
+                    <td class="text-center">
+                      1x Áo khoác dạ nam dáng dài, Xanh lá đậm
+                    </td>
+                    <td class="text-center"><b>924,000 ₫</b></td>
+                  </tr>
+                </tbody>
+              </table>
+              <ul class="list-inline-pagination">
+                <li class="first-page"><a href="#">Trang đầu</a></li>
+                <li><a href="#">«</a></li>
+                <li id="products_active_ts"><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li><a href="#">»</a></li>
+                <li class="last-page"><a href="#">Trang cuối</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/jquery-3.7.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+    <script src="/owlcarousel/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.1.4/toastr.min.js"></script>
+    <script src="/js/app.js"></script>
+  </body>
+</html>
