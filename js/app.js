@@ -23,6 +23,20 @@ $(function () {
     ToggleClass($(this).parent(), "open");
   });
 
+  $(".header-menu .menu-mobile").click(function () {
+    ToggleClass($(this).parent(), "open");
+  });
+
+  $(".header-menu .sub-menu-mobile .close-menu i").click(function () {
+    ToggleClass($(this).parents(".header-menu"), "open");
+  });
+
+  $(".header-menu .sub-menu-mobile ul li a i").click(function () {
+    const subMenu = $(this).closest("li").find("ul").first();
+    ToggleClass(subMenu, "open");
+    ReplaceClass($(this), "fa-plus", "fa-minus");
+  });
+
   function ToggleClass(element, nameClass) {
     element.hasClass(nameClass)
       ? element.removeClass(nameClass)
@@ -137,6 +151,7 @@ $(function () {
 
   iconShopping.click(function () {
     var listSize = $(this).parents(".product").find(".list-size");
+    $(".list-size").not(listSize).removeClass("open");
     ToggleClass(listSize, "open");
   });
 

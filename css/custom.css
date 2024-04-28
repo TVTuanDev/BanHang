@@ -300,6 +300,7 @@ select.form-control {
 }
 
 /* RESPONSIVE */
+/* NAV */
 
 @media (max-width: 1200px) {
   .header-menu .menu-main > li > span {
@@ -323,7 +324,7 @@ select.form-control {
     font-size: 9px;
   }
 
-  #header .header-menu ul li {
+  #header .header-menu .menu-main ul li {
     margin-right: 5px;
   }
 
@@ -341,13 +342,17 @@ select.form-control {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 769px) {
   .menu-main,
   .header-right .search-form,
   #main .home-banner,
   .header-actions .item:nth-child(1),
   .header-actions .item:nth-child(2) {
     display: none;
+  }
+
+  .menu-mobile {
+    display: block;
   }
 
   body .container {
@@ -357,19 +362,100 @@ select.form-control {
   .header-logo img {
     width: 120px;
   }
-}
 
-@media (max-width: 576px) {
-  body .container {
-    max-width: 100%;
-    width: 100%;
+  .exclusive-tab {
+    margin-right: 10px;
   }
 }
 
-.dat {
-  width: 100%;
-  height: 100px;
-  background-color: red;
-  margin-top: 200px;
-  z-index: 9999;
+/* PRODUCT */
+
+@media (max-width: 769px) {
+  .title-section {
+    font-size: 20px;
+    line-height: 32px;
+    margin-bottom: 10px;
+  }
+
+  .exclusive-tab {
+    font-size: 16px;
+    line-height: 20px;
+    padding-bottom: 8px;
+  }
+
+  .title-product a {
+    font-size: 12px;
+    line-height: 16px;
+    margin-bottom: 9px;
+  }
+
+  .info-ticket,
+  .badget {
+    font-size: 10px;
+  }
+
+  .ticket-news,
+  .seller,
+  .badget {
+    padding: 3px 14px 3px 11px;
+  }
+
+  .badget {
+    width: 32px;
+    height: 32px;
+    padding: 8px 10px 8px 3px;
+  }
+
+  .list-color ul li {
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+  }
+
+  .list-color ul li.checked::before {
+    top: 1px;
+    left: 5px;
+  }
+
+  .price-product ins {
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  .price-product del {
+    font-size: 10px;
+    line-height: 16px;
+  }
+
+  .add-to-cart span {
+    width: 20px;
+    height: 20px;
+    bottom: 1px;
+    border-radius: 4px 0;
+  }
+
+  .add-to-cart span i {
+    font-size: 10px;
+  }
+
+  .list-size ul li button {
+    padding: 10px 20px;
+  }
+}
+
+/* TRENDING & BRAND */
+
+@media (max-width: 769px) {
+  .list-ads-brand .item-slider-ads img,
+  .home-trending img {
+    border-radius: 25px 0 25px 0;
+  }
+
+  #brand .owl-nav i {
+    font-size: 30px;
+  }
+
+  #brand > div::before {
+    bottom: -28px;
+  }
 }

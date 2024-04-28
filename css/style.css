@@ -91,6 +91,101 @@ input:focus {
   border-bottom: 1px solid #f7f8f9;
 }
 
+.menu-mobile {
+  display: none;
+  position: relative;
+  width: 22px;
+  height: 16px;
+}
+
+.menu-mobile span {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 1px;
+  background: #000000;
+  right: 0;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.menu-mobile span:nth-child(1) {
+  top: 0;
+}
+
+.menu-mobile span:nth-child(2) {
+  top: 8px;
+}
+
+.menu-mobile span:nth-child(3) {
+  top: 16px;
+}
+
+.header-menu .sub-menu-mobile {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  right: 0;
+  bottom: 45px;
+  background: #fff;
+  z-index: 1000;
+  padding: 64px 16px 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out 0s;
+  overflow-y: auto;
+}
+
+.header-menu.open .sub-menu-mobile {
+  opacity: 1;
+  visibility: inherit;
+  left: 0;
+}
+
+.close-menu {
+  position: absolute;
+  top: 25px;
+  left: 20px;
+  font-size: 24px;
+  color: #3e3e3f;
+  cursor: pointer;
+}
+
+.close-menu i {
+  font-size: 18px;
+}
+
+.menu-mb li {
+  margin-bottom: 30px;
+}
+
+.menu-mb > li > a {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.menu-mb > li > a i {
+  color: #3e3e3f;
+}
+
+.sub-menu-mb li a {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  margin-bottom: 35px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.sub-menu-mobile .sub-menu-mb {
+  padding-right: 0;
+}
+
 .header-menu .menu-main > li {
   display: inline-block;
   padding: 15px 0;
@@ -518,6 +613,10 @@ input:focus {
   color: #172b4d;
 }
 
+.action-close i {
+  font-size: 20px;
+}
+
 /* MAIN */
 
 .site-main {
@@ -694,11 +793,6 @@ input:focus {
   margin-bottom: 40px;
 }
 
-.home-new-prod .title-section,
-.home-promote .title-section {
-  margin-bottom: 20px;
-}
-
 .title-section {
   text-align: center;
   letter-spacing: 2px;
@@ -707,6 +801,7 @@ input:focus {
   font-size: 30px;
   line-height: 32px;
   color: #221f20;
+  margin-bottom: 20px;
 }
 
 .exclusive-head ul {
@@ -1108,7 +1203,7 @@ input:focus {
 .slider-ads-brand::before {
   content: "";
   position: absolute;
-  bottom: -44px;
+  bottom: -35px;
   left: 50%;
   transform: translateX(-50%);
   -webkit-transform: translateX(-50%);
@@ -2741,6 +2836,11 @@ html .ui-button.ui-state-disabled:active {
 .child-sub {
   padding: 0 20px 0 22px;
   display: none;
+}
+
+.sub-menu-mb.open,
+.child-sub.open {
+  display: block;
 }
 
 .add-question .question-form {
