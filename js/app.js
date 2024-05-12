@@ -1,9 +1,7 @@
 $(function () {
   "use strict";
 
-  /*=================*/
-  /*HEADER NAVIGATION*/
-  /*=================*/
+  /* HEADER NAVIGATION */
 
   $(".item.wallet .icon").click(function () {
     var index = $(".item.wallet .icon").index(this); // Lấy vị trí của button được click trong danh sách các button
@@ -53,9 +51,19 @@ $(function () {
     }
   }
 
-  /*=============*/
-  /*SLIDER BANNER*/
-  /*=============*/
+  /* NAV BOTTOM */
+
+  $(".nav-bottom .item-nav-bottom .item-nav").click(function () {
+    $(this)
+      .closest(".nav-bottom")
+      .find(".sub-item-nav")
+      .not($(this).next())
+      .removeClass("open");
+    ToggleClass($(this).next(), "open");
+    console.log($(this).next());
+  });
+
+  /* SLIDER BANNER */
 
   $(".slider-banner.owl-carousel").owlCarousel({
     loop: true,
@@ -114,9 +122,8 @@ $(function () {
     },
   });
 
-  /*==========*/
   /* TAB HOME */
-  /*==========*/
+
   $(".exclusive-head li").click(function () {
     var tab_id = $(this).attr("data-tab");
     $(this)
@@ -168,9 +175,8 @@ $(function () {
     ToggleClass(listSize, "open");
   });
 
-  /*=======*/
   /* BRAND */
-  /*=======*/
+
   $(".slider-ads-brand.owl-carousel").owlCarousel({
     loop: true,
     margin: 30,
@@ -197,9 +203,7 @@ $(function () {
     },
   });
 
-  /*=========*/
   /* GALLERY */
-  /*=========*/
 
   $(".list-gallery.owl-carousel").owlCarousel({
     loop: true,
@@ -226,9 +230,7 @@ $(function () {
     },
   });
 
-  /*=========*/
   /* PRODUCT */
-  /*=========*/
 
   var listFilterProduct = $("#products .list-side .item-side-title");
   listFilterProduct.click(function () {
@@ -286,9 +288,11 @@ $(function () {
     location.reload();
   });
 
-  /*=====================*/
+  $(".filter-search").click(function () {
+    ToggleClass($(this).parent().next(), "open");
+  });
+
   /* RANGE PRICE PRODUCT */
-  /*=====================*/
 
   let product_price_from =
     $("input[name=product_price_from]").val() != ""
@@ -338,76 +342,35 @@ $(function () {
   });
 
   /* PRODUCT DETAIL */
+
+  new Swiper(".swiper-container", {
+    direction: "vertical",
+    loop: false,
+    navigation: {
+      nextEl: ".product-gallery-slide_nav .fa-chevron-down",
+      prevEl: ".product-gallery-slide_nav .fa-chevron-up",
+    },
+    slidesPerView: 4,
+    spaceBetween: 10,
+    breakpoints: {
+      769: {
+        direction: "vertical",
+      },
+      0: {
+        direction: "horizontal",
+      },
+    },
+  });
+
   const listImgProduct = $(".product-detail .product-gallery ul li");
   const imgMainProduct = $(".product-detail .product-gallery-main img");
-  const leftNavMainDetail = $(
-    ".product-detail .product-gallery-main_nav i:first-child"
-  );
-  const rightNavMainDetail = $(
-    ".product-detail .product-gallery-main_nav i:last-child"
-  );
-  const topNavSlideDetail = $(
-    ".product-detail .product-gallery-slide_nav i:first-child"
-  );
-  const bottomNavSlideDetail = $(
-    ".product-detail .product-gallery-slide_nav i:last-child"
-  );
-
-  leftNavMainDetail.click(function () {
-    const active = $(".product-detail .product-gallery ul li.active");
-    const first = $(".product-detail .product-gallery ul li:first-child");
-    if (active.is(first)) return;
-    active.removeClass("active");
-    active.prev().addClass("active");
-    GetActivePrdDetail();
-  });
-
-  rightNavMainDetail.click(function () {
-    const active = $(".product-detail .product-gallery ul li.active");
-    const last = $(".product-detail .product-gallery ul li:last-child");
-    if (active.is(last)) return;
-    active.removeClass("active");
-    active.next().addClass("active");
-    GetActivePrdDetail();
-  });
-
-  var indexDetailSlide = 1;
-  topNavSlideDetail.click(function () {
-    const active = $(".product-detail .product-gallery ul li.active");
-    const heightImg = active.height() + parseInt(active.css("margin-bottom"));
-    if (heightImg * indexDetailSlide <= heightImg) return;
-    active.parent().css({
-      transition: "all 0.3s ease-in-out 0s",
-      transform: `translateY(-${heightImg * (indexDetailSlide - 2)}px)`,
-    });
-    indexDetailSlide--;
-  });
-
-  bottomNavSlideDetail.click(function () {
-    const active = $(".product-detail .product-gallery ul li.active");
-    const heightList = $(".product-detail .product-gallery ul").height();
-    const heightImg = active.height() + parseInt(active.css("margin-bottom"));
-    if (indexDetailSlide >= listImgProduct.length - 4) return;
-    active.parent().css({
-      transition: "all 0.3s ease-in-out 0s",
-      transform: `translateY(-${heightImg * indexDetailSlide}px)`,
-    });
-    indexDetailSlide++;
-  });
 
   listImgProduct.click(function () {
-    $(this).siblings().removeClass("active");
-    $(this).addClass("active");
-
-    GetActivePrdDetail();
+    imgMainProduct.attr("src", $(this).find("img").attr("src"));
   });
 
-  function GetActivePrdDetail() {
-    const active = $(".product-detail .product-gallery ul li.active");
-    imgMainProduct.attr("src", active.find("img").attr("src"));
-  }
-
   /* PRODUCT INFO */
+
   const sizeInfo = $(".product-info-quantity .product-quantity");
 
   const favouriteDetail = $(
@@ -460,15 +423,16 @@ $(function () {
   });
 
   /* MODAL PASSWORD */
+
   $(".my-account .user-info .order-block .form-buttons a").click(function () {
     event.preventDefault();
-    ToggleClass($(".modal-info"), "active");
+    ToggleClass($(".modal-info.change-password"), "active");
 
     $(".modal-info .modal-content input").first().focus();
   });
 
   $(".modal-info .modal-content .close-modal").click(function () {
-    ToggleClass($(".modal-info"), "active");
+    ToggleClass($(this).closest(".modal-info"), "active");
   });
 
   $(".modal-info .modal-inner .modal-content").click(function () {
@@ -476,22 +440,102 @@ $(function () {
   });
 
   $(".modal-info .modal-inner").click(function () {
-    ToggleClass($(".modal-info"), "active");
+    ToggleClass($(this).closest(".modal-info"), "active");
   });
+
+  /* ADDRESS */
 
   $(".my-account .checkout-address .order-block_title button").click(
     function () {
       event.preventDefault();
-      ToggleClass($(".modal-info"), "active");
+      ToggleClass($(".modal-info.add-address"), "active");
 
       $(".modal-info .modal-content input").first().focus();
     }
   );
 
+  $(".my-account .checkout-address .checkout-actions button").click(
+    function () {
+      var parentFix = $(this).closest(".block-border");
+      var nameUser = parentFix.find("h4").text();
+      var numberPhone = parentFix.find(".phone-checkout span").last().text();
+      var addressFix = parentFix.find(".address-checkout span").last().text();
+      var modalInfo = $(".modal-info.fix-address");
+
+      modalInfo.find(".modal-content input.user-name").val(nameUser);
+      modalInfo.find(".modal-content input.phone-number").val(numberPhone);
+      modalInfo.find(".modal-content input.address-details").val(addressFix);
+
+      ToggleClass(modalInfo, "active");
+      $(".modal-info.fix-address .modal-content input").first().focus();
+    }
+  );
+
   /* Q&A */
+
   $(".question-answer .order-block ul li a").click(function () {
     $(this).parent().find(".sub-menu-mb").slideToggle("active");
 
     ReplaceClass($(this).find("i"), "fa-plus", "fa-minus");
+  });
+
+  /* FOOTER */
+
+  $(".site-bottom-mb .center-footer .item-ft-mb .title-footer").click(
+    function () {
+      ToggleClass($(this).parent(), "active");
+      $(this).next().slideToggle("active");
+    }
+  );
+
+  /* PROFILE */
+
+  $(".my-account .order-sitemenu .order-sitemenu__user").click(function () {
+    if ($(window).innerWidth() <= 992) {
+      ToggleClass($(this), "active");
+
+      $(this).parent().find(".order-sitemenu__menu").slideToggle("active");
+    }
+  });
+
+  /* CART */
+
+  $(".checkout .checkout-address-delivery .form-switch input").click(
+    function () {
+      ToggleClass(
+        $(this).closest("div.pt-4").find(".ds__item__contact-info"),
+        "d-block"
+      );
+    }
+  );
+
+  $(".checkout .view-more-product .btn").click(function () {
+    ToggleClass($(this).parent().parent().find(".checkout-my-cart"), "d-block");
+  });
+
+  $(".checkout .checkout-address-delivery button").click(function () {
+    ToggleClass($(this).next(), "active");
+  });
+
+  $(".checkout .checkout-address-delivery__action a").click(function () {
+    ToggleClass($(".modal-info.change-address"), "active");
+  });
+
+  $(".checkout .cart-summary-voucher-title > h4")
+    .last()
+    .click(function () {
+      ToggleClass($(this).next(), "active");
+    });
+
+  const labelPayment = $(".checkout .checkout-payment__options label");
+
+  labelPayment.click(function () {
+    if (!$(this).is(labelPayment.last())) {
+      $(".checkout .cart-summary .cart-summary_button a").text(
+        "Tiếp tục thanh toán"
+      );
+    } else {
+      $(".checkout .cart-summary .cart-summary_button a").text("Hoàn thành");
+    }
   });
 });
